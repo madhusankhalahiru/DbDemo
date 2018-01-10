@@ -13,8 +13,8 @@ public class HelloController {
     @Autowired
     private Repository repo;
 
-    @RequestMapping(value = "/")
-    public String hello() {
+    @GetMapping(path = "/") 
+    public @ResponseBody String hello() {
         return "Hello Wolrd";
     }
 
